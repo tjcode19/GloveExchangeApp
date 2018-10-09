@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Glovo Crytocurrency Exchange App</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h2>Glovo Fullstack Engineer Challenge</h2>
+        </div>
+        <div class="left" style="background-color:#aaa;"></div>
+        <div class="middle" style="background-color:#bbb;">
+            <h2>Welcome</h2>
+            <p>Please select product below to compare prices.</p>
+            <p><strong>Note:</strong> Higher price is green while lover is red</p>
+            <form>
+                <select id="products" onchange="setPrice()">
+
+                </select>
+            </form>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <p>BTX Price:</p>
+                        <p id="btxPrice"></p>
+                        <p id="btxPriceHi" style="color:darkgreen"></p>
+                        <p id="btxPriceLo" style="color:darkred"></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <p>BNB Price:</p>
+                        <p id="bnbPrice"></p>
+                        <p id="bnbPriceHi" style="color:darkgreen"></p>
+                        <p id="bnbPriceLo" style="color:darkred"></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <p>BFX Price:</p>
+                        <p id="bfxPrice"></p>
+                        <p id="bfxPriceHi" style="color:darkgreen"></p>
+                        <p id="bfxPriceLo" style="color:darkred"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right" style="background-color:#ccc;"></div>
+        <div class="footer">
+            <p>Developed by Tolulope Ogunleye</p>
+        </div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/script.js" defer async></script>
+
+</body>
+
+</html>
